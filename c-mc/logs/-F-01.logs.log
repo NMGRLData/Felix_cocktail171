@@ -1,0 +1,362 @@
+do run
+loading script "felix_analysis400_120_no_eq.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_calibration.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=624.242112, duration=0.000303983688354
+script duration name:analysis400_120_no_eq seconds:624.0
+loading script "felix_analysis400_120_no_eq.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_calibration.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=4.50611114502e-05
+loading script "felix_analysis400_120_no_eq.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_calibration.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=5.00679016113e-06
+script duration name:cocktail_calibration seconds:0.0
+loading script "felix_analysis400_120_no_eq.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_calibration.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000247955322266
+executed snippet estimated_duration=4.0, duration=0.00170707702637
+Script duration 624.0
+Run total estimated duration= 625.000
+run duration: 0:10:25
+doing event level: 2
+14:58:41 -- Setting default integration. t=1.048576
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+close session 4737598288
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+adding queue conditionals from /Users/obama/PychronDev/queue_conditionals/normal.yaml
+add default conditionals
+adding default conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run c-mc-F-01
+loading script "felix_analysis400_120_no_eq.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_calibration.py"
+loading script "felix_pump_extraction_line.py"
+%%%%%%%%%%%%%%%%%% setting automated run c-mc-F-01
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+queue conditionals path /Users/obama/PychronDev/queue_conditionals/normal.yaml
+loading conditionals from /Users/obama/PychronDev/queue_conditionals/normal.yaml
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+14:58:41 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1,L2, signals=0.11464,149.59686,23.40268,1.01079,31.82558,-0.37779
+14:58:41 -- testing system defined conditionals
+Checking default pre extraction terminations n=2
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+14:58:41 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+14:58:41 -- stopping status monitor
+stop 4710543280
+Status monitor stopped
+14:58:45 -- starting status monitor
+start 4710543280
+StatusMonitor period=3. Frequencies(state=1, checksum=3, lock=5, owner=5)
+start extraction
+do extraction
+Analysis started at 14:58:50.337676
+Extraction Started felix_cocktail_calibration.py
+14:58:50 -- ******* Extraction Started felix_cocktail_calibration.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x11ceb6c50>
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=5.00679016113e-06
+Cocktail Machine Calibration
+executed snippet estimated_duration=0, duration=0.00078296661377
+felix_cocktail_calibration.py completed successfully
+GetAchievedOutput ===>> No Response
+Requested Output= 0.000
+Achieved Output=  0.000
+GetResponseBlob ===>> [131][223][178]N[00][00][00][00]
+GetOutputBlob ===>> [131][223][178]N[00][00][00][00]
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 
+Extraction Finished
+14:58:51 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+14:58:51 -- Sending spectrometer configuration
+======== Sending configuration ========
+SetZFocus 1.65 ===>> OK
+SetHV 9900.0 ===>> OK
+SetZSymmetry 3.35 ===>> OK
+SetExtractionLens 63.57 ===>> OK
+SetIonRepeller -5.15 ===>> OK
+SetElectronEnergy 125.02 ===>> OK
+SetYSymmetry 38.07 ===>> OK
+send trap current 250.0
+GetParameter Trap Current Readback ===>> 248.718732832815
+SetParameter Trap Current Set,250.0 ===>> OK
+updating mftable name argon
+Using mftable located at /Users/obama/PychronDev/setupfiles/spectrometer/mftables/argon.csv
+============ MFtable ===========
+Isotope  H2     H1     AX     L1     L2     L2(CDD)
+Ar40     3.7650 3.8402 3.9183 3.9997 4.1076 4.0931
+Ar39     3.6906 3.6475 3.8414 3.9242 4.0269 4.0121
+Ar36     3.4643 3.4167 3.6058 3.6816 3.7905 3.7661
+================================
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+======== Configuration Finished ========
+GetYSymmetry ===>> 38.07
+GetZSymmetry ===>> 3.35
+GetParameter Trap Current Readback ===>> 247.823658670573
+GetHighVoltage ===>> 9900
+start measurement
+do measurement
+L#=c-mc-F analysis type=cocktail
+Measurement Started felix_analysis400_120_no_eq.py
+14:58:51 -- ******* Measurement Started felix_analysis400_120_no_eq.py *******
+state changed from extraction to measurement
+setting trap, emission, spec, defl, and gains
+GetExtractionLens ===>> 63.57
+GetYSymmetry ===>> 38.07
+GetZSymmetry ===>> 3.35
+GetZFocus ===>> 1.65
+GetDeflection H2 (CDD) ===>> 3250
+GetDeflection H1 (CDD) ===>> 3250
+GetDeflection AX (CDD) ===>> 3250
+GetDeflection L1 (CDD) ===>> 3250
+GetDeflection L2 (CDD) ===>> 0
+GetGain H2 ===>> 0.9809305
+GetGain H1 ===>> 0.96569
+GetGain AX ===>> 0.9535
+GetGain L1 ===>> 0.970094835296087
+GetGain L2 ===>> 0.967359864778375
+GetGain H2(CDD) ===>> 0
+GetGain H1(CDD) ===>> 0
+GetGain AX(CDD) ===>> 0
+GetGain L1(CDD) ===>> 0
+GetGain L2(CDD) ===>> 0
+GetParameter Trap Current Readback ===>> 248.047427211133
+GetParameter Source Current Readback ===>> 893.522859061222
+pre measurement save
+New frame /Users/obama/PychronDev/data/isotopes/2a/305c82-9c17-4504-9087-6d0e1be3e300.h5
+flush and close file /Users/obama/PychronDev/data/isotopes/2a/305c82-9c17-4504-9087-6d0e1be3e300.h5
+testing...
+no interpolation path defined
+executed snippet estimated_duration=624.242112, duration=0.000216960906982
+unknown measurement script
+activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
+activate detectors
+*************** Set Analysis View Ar/Ar
+create graphs
+clearing graphs
+clear isotope group
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2(CDD), iso=Ar36
+setting previous blanks
+ - setting Ar40 blank 1.146+/-0.017
+ - setting Ar36 blank 0.00672+/-0.00026
+ - setting Ar37 blank -0.021+/-0.011
+ - setting Ar38 blank 0.020+/-0.012
+ - setting Ar39 blank -0.035+/-0.025
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H2'}
+detector Detector(H2)
+POSITION Ar40 H2
+setting detector H2 to Ar40 (39.9624)
+setting detector H1 to Ar39 (38.8624)
+setting detector AX to Ar38 (37.9624)
+setting detector L1 to Ar37 (36.9624)
+setting detector L2 to Ar36 (35.8624)
+setting detector H2(CDD) to Ar40 (39.8624)
+setting detector H1(CDD) to Ar39 (38.8624)
+setting detector AX(CDD) to Ar38 (37.8624)
+setting detector L1(CDD) to Ar37 (36.8624)
+setting detector L2(CDD) to Ar36 (35.9624)
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [ -2.56720193e-04   9.47812314e-02   3.87324975e-01]
+H2 map mass to dac 39.9624 >> 3.76503
+GetHighVoltage ===>> 9900
+positioning Ar40 (3.76503) on H2
+setting magnet DAC
+current  : 3.765030
+requested: 3.765030
+Delta Dac: 0.000000
+Checking detector protection. dv=0.00000
+SetMagnetDAC 3.76503 ===>> OK
+set_dac. change=False
+set_time_zero () {}
+set_fits () {}
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+set "Ar40" to "('Parabolic', 'SEM')"
+set "Ar36" to "('Parabolic', 'SEM')"
+set "Ar37" to "('linear', 'SEM')"
+set "Ar38" to "('linear', 'SEM')"
+set "Ar39" to "('Parabolic', 'SEM')"
+set_baseline_fits () {}
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+set "H2" to "('average', 'SEM')"
+set "L2(CDD)" to "('average', 'SEM')"
+set "L1" to "('average', 'SEM')"
+set "AX" to "('average', 'SEM')"
+set "H1" to "('average', 'SEM')"
+multicollect () {'integration_time': 1.048576, 'ncounts': 400}
+build tables- signal [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /signal/Ar40 (Group) u'' table H2
+add group /signal/Ar39 (Group) u'' table H1
+add group /signal/Ar38 (Group) u'' table AX
+add group /signal/Ar37 (Group) u'' table L1
+add group /signal/Ar36 (Group) u'' table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/2a/305c82-9c17-4504-9087-6d0e1be3e300.h5
+measuring signal. ncounts=400
+starting measurement
+flush and close file /Users/obama/PychronDev/data/isotopes/2a/305c82-9c17-4504-9087-6d0e1be3e300.h5
+_execute: Traceback (most recent call last):
+  File "/Users/obama/Programming/git/pychron_dev/pychron/pyscripts/pyscript.py", line 360, in execute_snippet
+    func(*argv)
+  File "<string>", line 69, in main
+  File "/Users/obama/Programming/git/pychron_dev/pychron/pyscripts/pyscript.py", line 135, in decorator
+    return func(obj, *args, **kw)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/pyscripts/measurement_pyscript.py", line 198, in multicollect
+    series=self._series_count):
+  File "/Users/obama/Programming/git/pychron_dev/pychron/pyscripts/measurement_pyscript.py", line 883, in _automated_run_call
+    return func(*args, **kw)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/automated_run.py", line 356, in py_data_collection
+    check_conditionals, sc, obj)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/automated_run.py", line 2291, in _measure
+    m.measure()
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 114, in measure
+    self._measure(evt)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 152, in _measure
+    if not self._iter(i):
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 179, in _iter
+    if not self._iter_hook(i):
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/multi_collector.py", line 37, in _iter_hook
+    return self._iteration(i)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 215, in _iteration
+    self._plot_data(i, x, k, s)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 379, in _plot_data
+    self._plot_data_(i, x, keys, signals)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 299, in _plot_data_
+    self._set_plot_data(cnt, det.isotope, det.name, x, signal)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 370, in _set_plot_data
+    update_graph(graph, pid, fit, self.series_idx, self.fit_series_idx)
+  File "/Users/obama/Programming/git/pychron_dev/pychron/experiment/automated_run/data_collector.py", line 356, in update_graph
+    ypadding='0.1')
+  File "/Users/obama/Programming/git/pychron_dev/pychron/graph/graph.py", line 976, in add_datum
+    print 'adding datum', plotid, series, self.series[plotid]
+TypeError: list indices must be integers, not NoneType
+
+Post Equilibration Started felix_pump_extraction_line.py
+Post Measurement Started felix_pump_ms.py
+14:58:53 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+14:58:53 -- ******* Post Measurement Started felix_pump_ms.py *******
+testing...
+testing...
+no interpolation path defined
+no interpolation path defined
+executed snippet estimated_duration=0, duration=5.31673431396e-05
+calculate duration
+Pumping spectrometer
+testing...
+no interpolation path defined
+open () {'name': 'V'}
+executed snippet estimated_duration=4.0, duration=0.000320911407471
+open name=V desc=---
+executed snippet estimated_duration=4.0, duration=0.00596904754639
+Pump after analysis
+checking ownership. requestor=129.138.12.137
+doing GOSUB
+check software interlocks V
+interlocks []
+testing...
+actuate state mode=None-script, software_lock=False
+no interpolation path defined
+doing actuation None-script open_channel True
+executed snippet estimated_duration=4.0, duration=0.000307083129883
+Pump Bone
+close () {'description': 'Felix Inlet'}
+close name=--- desc=Felix Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Open V ===>> OK
+Close H ===>> OK
+GetIndicatorState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=4
+14:58:53 -- OPEN   VALVE-V (Felix Ion Pump)
+-------------------------- open V () result=[(True, True)]
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x11a669110>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x122fe93b0>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+setting label 4 L2(CDD) Ar36
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x122f44c50>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+GetIndicatorState H ===>> False
+setting label 4 L2(CDD) Ar36
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=4
+14:58:53 -- CLOSE  VALVE-H (Felix Inlet)
+-------------------------- close None (Felix Inlet) result=[(True, True)]
+"signal" increment series count="2" fit count="1" regressing="True"
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=0.43917298317
+felix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+14:58:53 -- ******* Post Measurement Finished *******
+----------------- finish -----------------
+state changed from measurement to failed
+----------------- stop -----------------
+Measurement Finished unsuccessfully. Aborted=False
+14:58:53 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
+failed execution step Measurement Failed
+measurement did not complete successfully
+14:58:53 -- Automated run c-mc-F-01 failed duration: 12.876 s
+----------------- finish -----------------
+----------------- stop -----------------
+finish run. runs completed=1
+write rem/ex queues
+/Users/obama/PychronDev/experiments/rem/MachineCalibrationAr37.rem.txt
+/Users/obama/PychronDev/experiments/rem/MachineCalibrationAr37.ex.txt
+doing event level: 3
